@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+a {
+  @apply text-brand-300 hover:text-brand-200;
+}
+
+.card-gradient {
+  background: radial-gradient(circle at top left, rgba(28, 126, 214, 0.3), transparent 65%),
+    radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.25), transparent 60%),
+    rgba(15, 23, 42, 0.6);
+}
+
+.glass {
+  @apply bg-slate-900/60 backdrop-blur-lg border border-slate-800/60;
+}
